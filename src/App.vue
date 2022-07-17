@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+  <div class="head">
+    <h1>Formulario de registro</h1>
+  </div>
+  <NameUser/>
+  <DateOfBirth/>
+  <ContactInformation/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NameUser from './components/NameUser.vue'
+import DateOfBirth from './components/DateOfBirth.vue'
+import ContactInformation from './components/ContactInformation'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NameUser,
+    DateOfBirth,
+    ContactInformation
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.head{
+  background-color: rgb(255, 126, 148);
+  height: 80px;
+  margin-bottom: 30px;
+}
+.head h1{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgb(254, 255, 255);
+  padding-top: 10px;
+  
 }
 </style>
